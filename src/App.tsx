@@ -41,7 +41,7 @@ function App() {
       </div>
       <h1>Web3Modal Integration</h1>
       <h3>Vite + React</h3>
-      <div className="card" style={{textAlign: 'center'}}>
+      <div className="card">
         <w3m-button />
         <Component />
       </div>
