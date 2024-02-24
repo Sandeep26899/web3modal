@@ -15,6 +15,14 @@ function App() {
     rpcUrl: "https://rpc-mumbai.maticvigil.com",
   };
 
+  const bscTestnet = {
+    chainId: 97,
+    name: "Binance Test Network",
+    currency: "BNB",
+    explorerUrl: "https://testnet.bscscan.com/",
+    rpcUrl: "https://data-seed-prebsc-1-s1.binance.org:8545/",
+  };
+
   const metadata = {
     name: "My Website",
     description: "My Website description",
@@ -24,7 +32,7 @@ function App() {
 
   createWeb3Modal({
     ethersConfig: defaultConfig({ metadata }),
-    chains: [mumbai],
+    chains: [mumbai, bscTestnet],
     projectId,
     enableAnalytics: true, // Optional - defaults to your Cloud configuration
   });
